@@ -7,7 +7,23 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    DropdownMenuArrow: typeof import('radix-vue')['DropdownMenuArrow']
+    DropdownMenuCheckboxItem: typeof import('radix-vue')['DropdownMenuCheckboxItem']
+    DropdownMenuContent: typeof import('radix-vue')['DropdownMenuContent']
+    DropdownMenuItem: typeof import('radix-vue')['DropdownMenuItem']
+    DropdownMenuItemIndicator: typeof import('radix-vue')['DropdownMenuItemIndicator']
+    DropdownMenuLabel: typeof import('radix-vue')['DropdownMenuLabel']
+    DropdownMenuPortal: typeof import('radix-vue')['DropdownMenuPortal']
+    DropdownMenuRadioGroup: typeof import('radix-vue')['DropdownMenuRadioGroup']
+    DropdownMenuRadioItem: typeof import('radix-vue')['DropdownMenuRadioItem']
+    DropdownMenuRoot: typeof import('radix-vue')['DropdownMenuRoot']
+    DropdownMenuSeparator: typeof import('radix-vue')['DropdownMenuSeparator']
+    DropdownMenuSub: typeof import('radix-vue')['DropdownMenuSub']
+    DropdownMenuSubContent: typeof import('radix-vue')['DropdownMenuSubContent']
+    DropdownMenuSubTrigger: typeof import('radix-vue')['DropdownMenuSubTrigger']
+    DropdownMenuTrigger: typeof import('radix-vue')['DropdownMenuTrigger']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    NpDropdown: typeof import('./src/components/np/dropdown.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

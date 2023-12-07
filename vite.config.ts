@@ -8,6 +8,8 @@ import Components from 'unplugin-vue-components/vite'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 
+import RadixVueResolver from 'radix-vue/resolver'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   base: './',
@@ -29,12 +31,15 @@ export default defineConfig({
         'vue',
         'vue-router',
         {
-          pinia: ['storeToRefs'],
+          'pinia': ['storeToRefs'],
+          '@iconify/vue': ['Icon'],
         },
       ],
     }),
     Components({
-      resolvers: [],
+      resolvers: [
+        RadixVueResolver(),
+      ],
       directoryAsNamespace: true,
     }),
   ],
