@@ -31,9 +31,10 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 npm i -D vite-plugin-pages vite-plugin-vue-layouts
 ```
 
-### vite 配置
+## 自动格式化 @antfu/eslint-config
 
-```js
-import Pages from 'vite-plugin-pages'
-import Layouts from 'vite-plugin-vue-layouts'
+```shell
+npm i -D eslint @antfu/eslint-config
 ```
+
+https://github.com/antfu/eslint-config
