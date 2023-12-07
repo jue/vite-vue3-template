@@ -1,3 +1,4 @@
+import path from 'node:path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -23,12 +24,23 @@ export default defineConfig({
     }),
     AutoImport({
       dts: true,
-      dirs: ['./src/utils'],
-      imports: ['vue', 'vue-router'],
+      dirs: ['./src/utils', './src/store/modules'],
+      imports: [
+        'vue',
+        'vue-router',
+        {
+          pinia: ['storeToRefs'],
+        },
+      ],
     }),
     Components({
       resolvers: [],
       directoryAsNamespace: true,
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 })

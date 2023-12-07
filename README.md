@@ -24,6 +24,7 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 - vue-router@4
 - unplugin-vue-components
 - unplugin-auto-import
+- pinia
 
 ## 自动加载路由 + 页面布局
 
