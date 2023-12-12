@@ -1,8 +1,8 @@
 {
   "name": "vue3-template",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
@@ -11,6 +11,8 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@iconify/vue": "^4.1.1",
+    "@radix-ui/colors": "^3.0.0",
     "axios": "^1.6.2",
     "pinia": "^2.1.7",
     "radix-vue": "^1.2.4",
@@ -19,7 +21,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.3.4",
-    "@iconify/vue": "^4.1.1",
     "@vitejs/plugin-vue": "^4.5.0",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.55.0",
